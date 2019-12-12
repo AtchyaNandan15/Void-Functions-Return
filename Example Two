@@ -1,0 +1,54 @@
+/*
+Jason Huo
+December 11th 
+Dev C++ 5.11
+Return Function Guide 2
+*/
+
+//Declare libraries
+#include<iostream>
+#include<string>
+using namespace std;
+
+//Declare function
+int letter1(string name1,string name2,string name3);
+
+//Main program
+main()
+{
+	//Declare variables
+	string name1,name2,name3;
+	int numLetter;
+	
+	//Ask user for information
+	cout<<"Enter your name"<<endl;
+	cin>>name1;
+	cin>>name2;
+	cin>>name3;
+	
+	//Call in function
+	numLetter=letter1(name1,name2,name3);
+	
+	//Output result
+	cout<<endl<<"Total letters entered is->"<<numLetter;
+}
+
+//"letter" function
+int letter1(string n1,string n2,string n3)
+{
+	//Declare variables
+	int total;
+	
+	//Set variable to 0 as a starting value
+	total=0;
+	
+	//Check length of each user's names
+	total=n1.length()+n2.length()+n3.length();
+	
+	//Return back to main function
+	return (total); 
+}
+
+
+
+
