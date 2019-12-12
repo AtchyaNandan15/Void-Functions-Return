@@ -1,0 +1,48 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+//Declare function
+float surfaceArea(float l,float w, float h);
+float volumeArea(float l,float w, float h);
+
+//Main program
+main()
+{
+	//Declare variables
+	float length,width,height,sArea,volume;
+	
+
+	cout<<"Enter your length ";
+	cin>>length;
+	
+	cout<<"Enter your width ";
+	cin>>width;
+	
+	cout<<"Enter your height ";
+	cin>>height;
+	
+	
+	//Call in function
+	sArea=surfaceArea(length,width,height);
+	cout<<"The surface area is "<<sArea;
+	
+	volume=volumeArea(length,width,height);
+	cout<<" The volume is "<<volume;
+	
+ 
+}
+
+
+float surfaceArea(float l,float w, float h)
+{
+	return(w*l+h*l+h*w);
+}
+
+
+float volumeArea(float l,float w, float h)
+{
+
+return(l*w*h);
+}
+
