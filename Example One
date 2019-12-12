@@ -1,0 +1,41 @@
+/*
+Jason Huo
+December 11th 
+Dev C++ 5.11
+Return Function Guide 1
+*/
+
+//Declare libraries
+#include<iostream>
+#include<cmath>
+using namespace std;j
+
+//Declare function
+float area(float L,float W);
+
+//Main program
+main()
+{
+	//Declare variables
+	float len,wid,myArea;
+	
+	//Ask user for information
+	cout<<"Enter your length->";
+	cin>>len;
+	cout<<"Enter your width->";
+	cin>>wid;
+	
+	//Call in function
+	myArea=area(len,wid);
+	
+	//Output result
+	cout<<"The area is "<<myArea;
+}
+
+//"area" function
+float area(float L,float W)
+{
+	//Return "L*W" back to "myArea=area(len,wid)" (Line 29)
+	return(L*W);
+}
+
