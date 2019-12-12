@@ -1,0 +1,61 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+char fortunes(char num1,char num2,char num3,char num4,char num5,char num6);
+
+int main()
+{
+    
+     srand(time(NULL));
+     char random =rand()% 6 + 1;
+     
+     random=fortunes(1,2,3,4,5,6);
+     
+     cout<<fortunes;
+     
+     
+     
+} 
+     char fortunes(char num1,char num2,char num3,char num4,char num5,char num6){
+  //change character into int
+		
+		if(random==1){
+			cout<<" The more you give, the more you'll have. ";
+		}	
+			
+		else if(random==2){
+			cout<<" Hard work pays off. ";
+		}
+			
+        else if(random==3){
+			cout<<" Don't give up. ";
+        }
+        
+		else if(random==4){
+			cout<<" Stay focused. ";
+		}
+		
+		else if(random==5){
+			cout<<" Good times are coming your way.";
+		}
+		else if(random==5){
+			cout<<" Stay patient and you will be rewarded. ";
+		}
+			
+			
+	}
+	
+	
+	
+	
+	
+	
