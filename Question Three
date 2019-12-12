@@ -7,55 +7,52 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <iostream>
-
+#include<time.h>
 using namespace std;
 
-char fortunes(char num1,char num2,char num3,char num4,char num5,char num6);
+int fortunes(int num1);
 
-int main()
+ main()
 {
-    
+     int fortunes2;
+     int random;
+     
      srand(time(NULL));
-     char random =rand()% 6 + 1;
+     random =rand()% 6 + 1;
+    
      
-     random=fortunes(1,2,3,4,5,6);
-     
+     fortunes2=fortunes(random);
      cout<<fortunes;
      
-     
+
      
 } 
-     char fortunes(char num1,char num2,char num3,char num4,char num5,char num6){
-  //change character into int
-		
-		if(random==1){
+     
+     int fortunes2(int num1) {
+
+		if(num1==1){
 			cout<<" The more you give, the more you'll have. ";
 		}	
 			
-		else if(random==2){
+		else if(num1==2){
 			cout<<" Hard work pays off. ";
 		}
 			
-        else if(random==3){
+        else if(num1==3){
 			cout<<" Don't give up. ";
         }
         
-		else if(random==4){
+		else if(num1==4){
 			cout<<" Stay focused. ";
 		}
 		
-		else if(random==5){
+		else if(num1==5){
 			cout<<" Good times are coming your way.";
 		}
-		else if(random==5){
+		else if(num1==6){
 			cout<<" Stay patient and you will be rewarded. ";
 		}
 			
 			
 	}
-	
-	
-	
-	
-	
 	
