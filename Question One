@@ -24,6 +24,7 @@ int main()
    cin>>n1;
    
    cout<<"Person two enter a number";
+   
    cin>>n2;
    
    cout<<"Person three enter a number";
