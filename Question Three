@@ -4,13 +4,10 @@
 *  Program: Dev c++ 5.11                                                                               
 *  Purpose: Learn how to use the return functions                                                      
 * ---------------------------------------------------------------------                                
-* Date Dictionary:  float length,width,height.....................................the user enters the length,width and height
-                    float sArea..........................................it will convert the surface area to the function
-                    float volume.........................it will convert the surface area to the function
-                    float srufaceArea.........................the surface area of the users input
-                    float volumeArea.........................the volume area of the users input
+* Date Dictionary:  int fortunes2.....................................it will convert it into the fortunes function
+                    int random..........................................randomly generate a number between 1 to 6
+                    int fortunes.........................the users fortunes in a function
                     
-                
 
 ********************************************************************************************************************/
 
@@ -20,7 +17,7 @@ using namespace std;
 
 int fortunes(int num1);
 
- main()
+ int main()
 {
      int fortunes2;
      int random;
@@ -30,35 +27,40 @@ int fortunes(int num1);
     
      
      fortunes2=fortunes(random);
-     cout<<fortunes;
      
 
      
 } 
      
-     int fortunes2(int num1) {
+     int fortunes(int num1) {
 
 		if(num1==1){
 			cout<<" The more you give, the more you'll have. ";
+	       	return(num1);
 		}	
 			
 		else if(num1==2){
 			cout<<" Hard work pays off. ";
+					return(num1);
 		}
 			
         else if(num1==3){
 			cout<<" Don't give up. ";
+				return(num1);
         }
         
 		else if(num1==4){
 			cout<<" Stay focused. ";
+				return(num1);
 		}
 		
 		else if(num1==5){
 			cout<<" Good times are coming your way.";
+				return(num1);
 		}
 		else if(num1==6){
 			cout<<" Stay patient and you will be rewarded. ";
+				return(num1);
 		}
 			
 			
