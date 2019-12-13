@@ -1,15 +1,30 @@
+/********************************************************************************************************************
+*  Atchya Nandan                                                                                       
+*  Date: December 12th 2019                                                                       
+*  Program: Dev c++ 5.11                                                                               
+*  Purpose: Learn how to use the return functions                                                      
+* ---------------------------------------------------------------------                                
+* Date Dictionary:  float length,width,height.....................................the user enters the length,width and height
+                    float sArea..........................................it will convert the surface area to the function
+                    float volume.........................it will convert the surface area to the function
+                    float srufaceArea.........................the surface area of the users input
+                    float volumeArea.........................the volume area of the users input
+                    
+                
+
+********************************************************************************************************************/
+
 #include<iostream>
 #include<cmath>
 using namespace std;
 
-//Declare function
 float surfaceArea(float l,float w, float h);
 float volumeArea(float l,float w, float h);
 
-//Main program
+
 main()
 {
-	//Declare variables
+
 	float length,width,height,sArea,volume;
 	
 
@@ -25,10 +40,10 @@ main()
 	
 	//Call in function
 	sArea=surfaceArea(length,width,height);
-	cout<<"The surface area is "<<sArea;
+	cout<<"The surface area is "<<sArea<< "cm";
 	
 	volume=volumeArea(length,width,height);
-	cout<<" The volume is "<<volume;
+	cout<<" \nThe volume is "<<volume<<"cm";
 	
  
 }
